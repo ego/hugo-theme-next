@@ -7,3 +7,10 @@
 {{ if .Params.mermaid }}
   {{ partial "_funs/get_plugin.html" (dict "ctx" . "class" "others" "plugin" "mermaid.js") }}
 {{ end }}
+
+{{ if .Params.js }}
+  {{ $jsList := .Params.js }}
+  {{ range $jsList }}
+    <script type="text/javascript" src="{{ . }}" defer></script>
+  {{ end }}
+{{ end }}
