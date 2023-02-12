@@ -30,3 +30,11 @@ kbd {
   padding: .1em .3em;
   white-space: nowrap;
 }
+
+
+// Custom style
+// Disable code block from Horizontal scrolling.
+code[class*="language-"], pre[class*="language-"] {
+  word-wrap: break-word !important;
+  white-space: pre-wrap !important;
+}
